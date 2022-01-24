@@ -2,8 +2,8 @@
 
 <!-- badges: start -->
 
-[![R-CMD-check](https://github.com/grddavies/rtern/workflows/R-CMD-check/badge.svg)](https://github.com/grddavies/rtern/actions)
-[![Codecov test coverage](https://codecov.io/gh/hedscan/rtern/branch/master/graph/badge.svg)](https://codecov.io/gh/hedscan/rtern?branch=master)
+[![R-CMD-check](https://github.com/grddavies/rtern/actions/workflows/check-standard.yaml/badge.svg)](https://github.com/grddavies/rtern/actions/workflows/check-standard.yaml)
+[![Codecov test coverage](https://codecov.io/gh/grddavies/rtern/branch/master/graph/badge.svg)](https://app.codecov.io/gh/grddavies/rtern?branch=master)
 
 <!-- badges: end -->
 
@@ -16,7 +16,8 @@ This groundbreaking spoonful of syntactic sugar will supercharge your workflow a
 Yes, we know that it is possible to perform conditional assignment in base R multiple ways:
 
 ```r
-x <- if(y > 1) 1 else 2
+# Using a one-line if/else:
+x <- if (y > 1) 1 else 2
 # vectorized form:
 x <- ifelse(y > 1, 1, 2)
 ```
@@ -40,15 +41,13 @@ _Who needs help files? Not you, champ._
 
 ## Installation
 
-You <s>can</s> _can't_ install a released version of rtern from [CRAN](https://CRAN.R-project.org) with:
+You can install the latest released version of rtern from [CRAN](https://CRAN.R-project.org) with:
 
 ```r
 install.packages("rtern")
 ```
 
-...sorry
-
-Instead you can install from GitHub with:
+Or install the development version from GitHub with:
 
 ```r
 # install.packages("devtools")
